@@ -1,0 +1,123 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.sky{
+    background-image: url(./Media/skye.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    width: 100%;
+    height: 37vh;
+    position: relative;
+}
+.house{
+    width: 100%;
+    bottom: -15%;
+    position: absolute;
+    z-index: 0;
+}
+.plane{
+    position: absolute;
+    width: 22vw;
+    right: 0;
+    animation: plane 2.5s linear infinite;
+}
+
+@keyframes plane {
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(-1500px);
+    }
+}
+
+.helicopter{
+    position: absolute;
+    width: 17vw;
+    right: 0;
+    animation: helicopter 2.2s linear infinite;
+}
+@keyframes helicopter {
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(-1500px);
+    }
+}
+.green-div{
+    background-color: #58F758;
+    height: 25px;
+    width: 100%;
+}
+
+.lady{
+    position: absolute;
+    width: 150px;
+    top: -130px;
+    z-index: 10;
+    animation: lady 7s linear infinite;
+}
+
+@keyframes lady {
+    0%{
+        transform: translateX(-300px);
+    }
+    100%{
+        transform: translateX(1500px);
+    }
+    
+}
+
+.man{
+    position: absolute;
+    width: 150px;
+    top: -130px;
+    z-index: 10;
+    animation: man 7s linear infinite;
+}
+
+@keyframes man {
+    0%{
+        transform: translateX(1500px);
+    }
+    100%{
+        transform: translateX(-800px);
+    }
+    
+}
+
+
+.road{
+    height: 24vh;
+    background-size:contain;
+    width: 100%;
+    background-image: url(./Media/road.jfif);
+    position: relative;
+}
+
+.street-light{
+    width: 100%;
+    height: 60px;
+    position: relative;
+    background-color: #313030;
+    /* z-index: 3; */
+}
+
+.street-light div{
+    display: flex; 
+    position: absolute;
+    top: -150px;
+    left: 5%;
+    z-index: 10;
+}
+
+.light{
+    height: 200px;
+    top: 150px;
+}
+.oneway{
+    
+}
