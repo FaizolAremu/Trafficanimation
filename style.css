@@ -3,6 +3,10 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+html, body {
+    overflow-x: hidden;
+}
 .sky{
     background-image: url(./Media/skye.jpg);
     background-repeat: no-repeat;
@@ -84,7 +88,7 @@
         transform: translateX(1500px);
     }
     100%{
-        transform: translateX(-800px);
+        transform: translateX(-500px);
     }
     
 }
@@ -96,6 +100,48 @@
     width: 100%;
     background-image: url(./Media/road.jfif);
     position: relative;
+}
+
+.bike{
+    position: absolute;
+    top: -50px;
+    animation: bike 3s linear infinite;
+}
+@keyframes bike {
+    0%{
+        transform: translateX(1500px);
+    }
+    100%{
+        transform: translateX(-400px);
+    }
+}
+
+.taxi{
+    position: absolute;
+    animation: yellow-taxi 4s linear infinite;
+}
+@keyframes yellow-taxi {
+    0%{
+        transform: translateX(1500px);
+    }
+    100%{
+        transform: translateX(-500px);
+    }
+}
+
+.truck-bus{
+    width: 9.5vw;
+    position: absolute;
+    top: 60px;
+    animation: truck 4.4s linear infinite;
+}
+@keyframes truck {
+    0%{
+        transform: translateX(1500px);
+    }
+    100%{
+        transform: translateX(-500px);
+    }
 }
 
 .street-light{
@@ -118,6 +164,60 @@
     height: 200px;
     top: 150px;
 }
-.oneway{
-    
+
+.sport-car{
+    position: absolute;
+    width: 12vw;
+    animation: sport-car 2s linear infinite ;
+}
+@keyframes sport-car {
+    0%{
+        transform: translateX(-300px);
+    }
+    100%{
+        transform: translate(1400px);
+    }
+}
+
+.bicycle{
+    position: absolute;
+    width: 7vw;
+    top: 50px;
+    animation: bicycle 7s linear infinite ;
+}
+@keyframes bicycle {
+    0%{
+        transform: translateX(-500px);
+    }
+    100%{
+        transform: translate(1500px);
+    }
+}
+
+.yellow-truck {
+    position: relative;
+    width: 150px;
+    animation: yellow-truck 6s linear infinite ;
+}
+@keyframes yellow-truck {
+    0%{
+        transform: translateX(-800px);
+    }
+    100%{
+        transform: translateX(1600px);
+    }
+}
+
+.taxi2{
+    position: absolute;
+    width: 14vw;
+    animation: taxi2 3s linear infinite ;
+}
+@keyframes taxi2 {
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translate(1500px);
+    }
 }
